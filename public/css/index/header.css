@@ -6,6 +6,8 @@
   z-index: 3;
 }
 
+.application-header a { color: white; }
+
 .application-header ul {
   margin: 0;
   padding: 0;
