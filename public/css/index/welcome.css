@@ -1,0 +1,13 @@
+.welcome {
+  position: relative;
+  top: 80px;
+}
+
+.welcome .catch-phrase {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.welcome .catch-phrase .sentence-end {
+  color: var(--color-primary);
+}
