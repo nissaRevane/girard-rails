@@ -1,0 +1,128 @@
+.application-header {
+  background-color: #980905;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.application-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: var(--color-primary)
+}
+
+.application-header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid var(--color-secondary-far);
+  text-decoration: none;
+}
+
+.application-header li a:hover,
+.application-header .menu-btn:hover {
+  background-color: var(--color-primary-near);
+}
+
+.application-header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.application-header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.application-header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.application-header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.application-header .menu-icon .navicon:before,
+.application-header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.application-header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.application-header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.application-header .menu-btn {
+  display: none;
+}
+
+.application-header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.application-header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.application-header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.application-header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.application-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.application-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .application-header li {
+    float: left;
+  }
+  .application-header li a {
+    padding: 20px 30px;
+  }
+  .application-header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .application-header .menu-icon {
+    display: none;
+  }
+}

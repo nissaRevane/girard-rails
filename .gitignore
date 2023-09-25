@@ -1,0 +1,6 @@
+.bundle/
+Gemfile.lock
+*.gem
+gems
+github-nissa-revane
+github-nissa-revane.pub
