@@ -11,3 +11,30 @@
 .welcome .catch-phrase .sentence-end {
   color: var(--color-primary);
 }
+
+.welcome .profile {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  background-color: var(--color-secondary-far);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.welcome .profile .presentation {
+  max-width: 50%;
+}
+
+.welcome .profile .presentation .description {
+  color: var(--color-primary);
+}
+
+.welcome .profile .profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
