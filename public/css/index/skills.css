@@ -1,0 +1,10 @@
+.skills {
+  margin-top: 120px;
+}
+
+.skills .map-of-skills {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+}
