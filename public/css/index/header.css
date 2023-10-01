@@ -6,7 +6,9 @@
   z-index: 3;
 }
 
-.application-header a { color: white; }
+.application-header .logo-girard-rails {
+  height: 31px;
+}
 
 .application-header ul {
   margin: 0;
@@ -17,6 +19,7 @@
 }
 
 .application-header li a {
+  color: white;
   display: block;
   padding: 20px 20px;
   border-right: 1px solid var(--color-secondary-far);

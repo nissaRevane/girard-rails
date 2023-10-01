@@ -1,7 +1,12 @@
+# frozen_string_literal: true
+
 require 'erb'
 
+# The Application class is responsible for handling incoming HTTP requests
+# and returning the appropriate response
 class Application
   HTML_HEADER = { 'Content-Type' => 'text/html' }.freeze
+
   def call(env)
     request = Rack::Request.new(env)
     case request.path
