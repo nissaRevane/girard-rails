@@ -14,6 +14,11 @@
   margin: auto;
 }
 
+.main-content-after-header {
+  position: relative;
+  top: 80px;
+}
+
 .girard-button {
   display: inline-block;
   padding: 10px 20px;
