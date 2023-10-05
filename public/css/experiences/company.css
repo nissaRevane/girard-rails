@@ -1,0 +1,31 @@
+.company {
+  margin-top: 20px;
+}
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-header .company-logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.company-header h2 {
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+}
+
+.company-header .experience-duration {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.company-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0;
+}

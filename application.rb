@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'erb'
+require_relative './lib/namespace'
 
 # The Application class is responsible for handling incoming HTTP requests
 # and returning the appropriate response
@@ -17,8 +17,11 @@ class Application
     end
   end
 
-  def render(template)
-    path = File.expand_path("../views/#{template}", __FILE__)
-    ERB.new(File.read(path)).result(binding)
+  def render(template_path, kwargs = {})
+    path = File.expand_path("../views/#{template_path}", __FILE__)
+    template = File.read(path)
+    namespace = Namespace.new(kwargs)
+
+    ERB.new(template).result(namespace.call_binding)
   end
 end

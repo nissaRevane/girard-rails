@@ -1,0 +1,29 @@
+.girard-rails-tag {
+  border-radius: 8px;
+  padding: 2px 7px;
+  font-size: 0.8rem;
+}
+
+.girard-rails-tag.tag-primary {
+  background-color: var(--color-primary);
+}
+
+.girard-rails-tag.tag-primary-near {
+  background-color: var(--color-primary-near);
+}
+
+.girard-rails-tag.tag-primary-far {
+  background-color: var(--color-primary-far);
+}
+
+.girard-rails-tag.tag-secondary {
+  background-color: var(--color-secondary);
+}
+
+.girard-rails-tag.tag-secondary-near {
+  background-color: var(--color-secondary-near);
+}
+
+.girard-rails-tag.tag-secondary-far {
+  background-color: var(--color-secondary-far);
+}
