@@ -7,10 +7,11 @@
   justify-content: space-between;
 }
 
-.company-header .company-logo {
-  width: 3rem;
-  height: 3rem;
-}
+.company-logo { margin: auto 0; }
+
+.company-logo.square-logo { height: 3rem; }
+
+.company-logo.long-logo { height: 1.5rem; }
 
 .company-header h2 {
   font-size: 1.3rem;
