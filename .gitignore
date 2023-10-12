@@ -1,5 +1,4 @@
 .bundle/
-Gemfile.lock
 *.gem
 gems
 github-nissa-revane
