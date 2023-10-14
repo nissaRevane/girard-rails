@@ -2,20 +2,28 @@
 <html lang='fr'>
   <head>
     <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not found</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Page introuvable</title>
     <link rel='stylesheet' href='/public/css/shared.css'>
+    <link rel='stylesheet' href='/public/css/shared/header.css'>
+    <link rel='stylesheet' href='/public/css/shared/contact.css'>
+     <link rel='stylesheet' href='/public/css/not_found.css'>
   </head>
 
   <body>
-    <div class='container'>
-      <div class='not-found'>
-        <h1>404</h1>
-        <h2>Page not found</h2>
-        <p>Sorry, but the page you were trying to view does not exist.</p>
-        <a href='/'>Go back to home page</a>
-      </div>
-    </div>
+    <%= render('shared/header.erb') %>
+
+    <main class='not-found main-content-after-header container'>
+      <h1>Erreur 404</h1>
+      <h2>Page introuvable</h2>
+      <p class='error-message'>La page que vous avez demandé n'existe pas.</p>
+      <a href='/' class='girard-button primary-near'>
+        <i class='fas fa-arrow-left'></i>
+        Retour à l'accueil
+      </a>
+    </main>
+
+    <%= render('shared/contact.erb') %>
   </body>
-  <script src="https://kit.fontawesome.com/7ab03c2740.js" crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/7ab03c2740.js' crossorigin='anonymous'></script>
 </html>

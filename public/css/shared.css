@@ -7,6 +7,16 @@
   --color-secondary-far: #cbd8e1;
 }
 
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  color: var(--color-secondary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;

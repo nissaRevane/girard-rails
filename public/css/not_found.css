@@ -1,0 +1,14 @@
+.not-found h1, .not-found h2, .not-found .error-message {
+  text-align: center;
+}
+
+.not-found h1 {
+  margin: 0;
+}
+
+.not-found a {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
