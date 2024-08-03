@@ -4,6 +4,10 @@ require_relative 'application_controller'
 
 class ExperiencesController < ApplicationController
   WORK_EXPERIENCES = [
+    { company_name: 'dickson',
+      start_date: Date.new(2024, 3, 16),
+      end_date: DateTime.now,
+      tags: ['Ruby on rails', 'PostgreSQL', 'AWS', 'VueJs'] },
     { company_name: 'enerfip',
       start_date: Date.new(2022, 6, 17),
       end_date: Date.new(2024, 3, 15),
