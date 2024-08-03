@@ -3,7 +3,7 @@
 require_relative 'controllers/errors_controller'
 require_relative 'controllers/experiences_controller'
 require_relative 'controllers/home_controller'
-require_relative 'controllers/not_found_controller'
+require_relative 'controllers/errors_controller'
 
 class Application
   def call(env)
@@ -12,7 +12,7 @@ class Application
     when '/' then HomeController.index
     when '/experiences' then ExperiencesController.index
     else
-      ErrorController.not_found
+      ErrorsController.not_found
     end
   end
 end
