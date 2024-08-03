@@ -9,6 +9,7 @@
     <link rel='stylesheet' href='/public/css/shared/contact.css'>
     <link rel='stylesheet' href='/public/css/shared/tag.css'>
     <link rel='stylesheet' href='/public/css/experiences/experience.css'>
+    <link rel='stylesheet' href='/public/css/experiences/summary-card.css'>
   </head>
 
   <body>
@@ -16,9 +17,11 @@
 
     <main class='main-content-after-header'>
       <h1 class='container'>Mes expériences de développeur Ruby on Rails</h1>
-      <%= render('experiences/enerfip.erb') %>
-      <%= render('experiences/shippingbo.erb') %>
-      <%= render('experiences/insa.erb') %>
+      <div class='container experience-summary-cards'>
+        <%= render('experiences/summary_card.erb') %>
+        <%= render('experiences/summary_card.erb') %>
+        <%= render('experiences/summary_card.erb') %>
+      </div>
     </main>
 
     <%= render('shared/contact.erb') %>

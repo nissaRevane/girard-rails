@@ -1,0 +1,23 @@
+.summary-card {
+  border: 1px groove var(--color-secondary-near);
+  border-radius: 12px;
+  display: flex;
+  /* only use width necesseray for the blocks inside */
+  width: fit-content;
+}
+
+.summary-card-logo {
+  height: 5rem;
+  margin: auto 10px;
+}
+
+.summary-card-highlights {
+  margin: auto 10px;
+}
+
+.summary-card-tags {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px;
+  gap: 5px;
+}
