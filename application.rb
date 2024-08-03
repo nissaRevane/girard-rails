@@ -1,27 +1,18 @@
 # frozen_string_literal: true
 
-require_relative './lib/namespace'
+require_relative 'controllers/errors_controller'
+require_relative 'controllers/experiences_controller'
+require_relative 'controllers/home_controller'
+require_relative 'controllers/not_found_controller'
 
-# The Application class is responsible for handling incoming HTTP requests
-# and returning the appropriate response
 class Application
-  HTML_HEADER = { 'Content-Type' => 'text/html' }.freeze
-
   def call(env)
     request = Rack::Request.new(env)
     case request.path
-    when '/' then [200, HTML_HEADER, [render('index.erb')]]
-    when '/experiences' then [200, HTML_HEADER, [render('experiences.erb')]]
+    when '/' then HomeController.index
+    when '/experiences' then ExperiencesController.index
     else
-      [404, HTML_HEADER, [render('not_found.erb')]]
+      ErrorController.not_found
     end
-  end
-
-  def render(template_path, kwargs = {})
-    path = File.expand_path("../views/#{template_path}", __FILE__)
-    template = File.read(path)
-    namespace = Namespace.new(kwargs)
-
-    ERB.new(template).result(namespace.call_binding)
   end
 end

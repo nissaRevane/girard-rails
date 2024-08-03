@@ -2,8 +2,8 @@
   border: 1px groove var(--color-secondary-near);
   border-radius: 12px;
   display: flex;
-  /* only use width necesseray for the blocks inside */
   width: fit-content;
+  padding: 10px;
 }
 
 .summary-card-logo {
