@@ -13,6 +13,13 @@
 
 .experience-logo.long-logo { height: 1.5rem; }
 
+.experience-summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 .experience-header h2 {
   font-size: 1.3rem;
   margin: 0 0 10px 0;
