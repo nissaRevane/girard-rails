@@ -19,6 +19,6 @@ class ExperiencesController < ApplicationController
   ].freeze
 
   def self.index
-    [200, HTML_HEADER, [render('experiences.erb', work_experiences: WORK_EXPERIENCES)]]
+    [200, HTML_HEADER, [render_with_layout('experiences.erb', work_experiences: WORK_EXPERIENCES)]]
   end
 end

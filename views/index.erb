@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang='fr'>
-  <head>
-    <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girard Rails</title>
-    <link rel='stylesheet' href='/public/css/shared.css'>
-    <link rel='stylesheet' href='/public/css/shared/header.css'>
-    <link rel='stylesheet' href='/public/css/shared/contact.css'>
-    <link rel='stylesheet' href='/public/css/index/welcome.css'>
-    <link rel='stylesheet' href='/public/css/index/skills.css'>
-  </head>
-
-  <body>
-    <%= render('shared/header.erb') %>
-
-    <main class='main-content-after-header'>
-      <%= render('index/welcome.erb') %>
-      <%= render('index/skills.erb') %>
-    </main>
-
-    <%= render('shared/contact.erb') %>
-  </body>
-  <script src="https://kit.fontawesome.com/7ab03c2740.js" crossorigin="anonymous"></script>
-</html>
+<main class='main-content-after-header'>
+  <%= render('index/welcome.erb') %>
+  <%= render('index/skills.erb') %>
+</main>

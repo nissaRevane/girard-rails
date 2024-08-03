@@ -12,4 +12,8 @@ class ApplicationController
 
     ERB.new(template).result(namespace.call_binding)
   end
+
+  def self.render_with_layout(template_path, kwargs = {})
+    render('layout.erb', {template_path: , kwargs:})
+  end
 end

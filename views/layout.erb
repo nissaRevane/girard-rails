@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='fr'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girard Rails</title>
+    <link rel='stylesheet' href='/public/css/shared.css'>
+    <link rel='stylesheet' href='/public/css/shared/header.css'>
+    <link rel='stylesheet' href='/public/css/shared/contact.css'>
+    <link rel='stylesheet' href='/public/css/shared/tag.css'>
+    <link rel='stylesheet' href='/public/css/index/welcome.css'>
+    <link rel='stylesheet' href='/public/css/index/skills.css'>
+    <link rel='stylesheet' href='/public/css/not_found.css'>
+    <link rel='stylesheet' href='/public/css/experiences/experience.css'>
+    <link rel='stylesheet' href='/public/css/experiences/summary-card.css'>
+  </head>
+
+  <body>
+    <%= render('shared/header.erb') %>
+    <%= render(template_path, kwargs) %>
+    <%= render('shared/contact.erb') %>
+  </body>
+  <script src="https://kit.fontawesome.com/7ab03c2740.js" crossorigin="anonymous"></script>
+</html>
