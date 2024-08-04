@@ -1,0 +1,40 @@
+<main class='main-content-after-header experience enerfip container'>
+  <a href='/experiences' class='girard-button primary-near'>⬅ Retour</a>
+  <div class='experience-header'>
+    <div class='hightlights'>
+      <h2><%= company_name.capitalize %></h2>
+      <p class='experience-duration'>
+        <%="#{start_date.strftime('%m/%Y')} - #{end_date.strftime('%m/%Y')}"%>
+      </p>
+    </div>
+    <img
+      class='experience-logo square-logo'
+      src=<%="'/public/images/logos/#{company_name}_company_square_logo.webp'"%>
+      alt=<%="'Logo de #{company_name}'"%>
+    >
+  </div>
+
+  <div class='experience-tags'>
+    <% tags.each_with_index do |tag, index| %>
+      <%= render(
+        'shared/tag.erb',
+        tag: tag,
+        color: index%2==0 ? 'primary-far' : 'secondary-far'
+      ) %>
+    <% end %>
+  </div>
+
+  <p>
+    Enerfip est une plateforme d’investissement dédiée à la transition énergétique.
+    Plus de 40 000 investisseurs ont pu faire naître 400 projets d’énergie renouvelable, via la levée de plus de 350 millions d’euros.
+    Tout cela est techniquement rendu possible par une équipe de 5 développeurs et 2 designers.
+    Pour la partie backend, nous assurons la performance d’une API qui peut subir de fortes montées en charge lors du lancement des collectes de fonds.
+  </p>
+  <p>
+    Fin 2022, afin de compléter son activité, Enerfip lance un fond d’investissement.
+    Avec une collègue, nous prenons en main la conception et la création d’une plateforme dédiée.
+    Pour ce genre de produits financiers, la réglementation est très exigeante, ce qui implique des défis pour l'architecture des plateformes.
+    Pour comprendre et maîtriser cette réglementation, j'obtiens une certification de l’AMF (Autorité des Marchés Financiers).
+    Durant ce processus de conception, je me concentre sur la partie infrastructure, ce qui me permet d’améliorer ma maîtrise de Heroku et du service S3 d’AWS.
+  </p>
+</main>

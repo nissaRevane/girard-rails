@@ -20,6 +20,11 @@
   margin-top: 10px;
 }
 
+.experience-summary-cards-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .experience-header h2 {
   font-size: 1.3rem;
   margin: 0 0 10px 0;

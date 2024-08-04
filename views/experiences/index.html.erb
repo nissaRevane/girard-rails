@@ -1,0 +1,19 @@
+<main class='main-content-after-header'>
+  <h1 class='container'>Mes expériences de développeur Ruby on Rails</h1>
+  <div class='container experience-summary-cards'>
+    <% work_experiences.each do |work_experience| %>
+      <a
+        href='/experiences/<%=work_experience[:company_name]%>'
+        class='experience-summary-cards-link'
+      >
+        <%= render(
+          'experiences/_summary_card.html.erb',
+          company_name: work_experience[:company_name],
+          start_date: work_experience[:start_date],
+          end_date: work_experience[:end_date],
+          tags: work_experience[:tags]
+        ) %>
+      <% end %>
+    </a>
+  </div>
+</main>
