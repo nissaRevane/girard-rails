@@ -1,30 +1,13 @@
-<section class='experience shippingbo container'>
-  <div class='experience-header'>
-    <div class='hightlights'>
-      <h2>Shippingbo</h2>
-      <p class='experience-duration'>D'octobre 2019 à juillet 2022</p>
-    </div>
-    <img
-      class='experience-logo long-logo'
-      src='/public/images/logos/shippingbo_company_logo.webp'
-      alt='Logo de Shippingbo'>
-  </div>
-
-  <div class='experience-tags'>
-    <%= render('shared/tag.erb', tag: 'Ruby on Rails', color: 'primary-far') %>
-    <%= render('shared/tag.erb', tag: 'Postgresql', color: 'secondary-far') %>
-    <%= render('shared/tag.erb', tag: 'Sidekiq', color: 'primary-far') %>
-    <%= render('shared/tag.erb', tag: 'Heroku', color: 'secondary-far') %>
-  </div>
-
+<div class='experience-show-content shippingbo container'>
   <p>
     Shippingbo est une solution de gestion logistique pour les e-commerçants.
     De la commande jusqu'au transport, la plateforme Saas permet de fluidifier toute la chaîne logistique.
     Shippingbo se place donc au centre d’un écosystème complexe.
     Le défi principal réside dans l'interconnexion de l’API avec une multitude de services tels que des ERP, des marketplaces ou des transporteurs.
-    <br><br>
+  </p>
+  <p>
     Dans ce cadre, je travaille sur l’attribution des droits liés aux offres commerciales.
     Selon le type et le niveau d'abonnement, le client doit accéder à une partie plus ou moins étendue de l’application.
     Cela demande une gestion poussée des policies via pundit, et des machines à état à travers la gem aasm.
   </p>
-</section>
+</div>

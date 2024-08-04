@@ -1,18 +1,3 @@
-.experience {
-  margin-top: 20px;
-}
-
-.experience-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.experience-logo { margin: auto 0; }
-
-.experience-logo.square-logo { height: 3rem; }
-
-.experience-logo.long-logo { height: 1.5rem; }
-
 .experience-summary-cards {
   display: flex;
   flex-wrap: wrap;
@@ -23,17 +8,6 @@
 .experience-summary-cards-link {
   text-decoration: none;
   color: inherit;
-}
-
-.experience-header h2 {
-  font-size: 1.3rem;
-  margin: 0 0 10px 0;
-}
-
-.experience-header .experience-duration {
-  font-size: 0.8rem;
-  font-style: italic;
-  margin: 0;
 }
 
 .experience-tags {

@@ -1,0 +1,22 @@
+.experiences-show-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiences-show-header-details {
+  display: flex;
+  gap: 10px;
+}
+
+.experiences-show-header h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.experiences-show-duration {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.experiences-show-square-logo { height: 57px; }
