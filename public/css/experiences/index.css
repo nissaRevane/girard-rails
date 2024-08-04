@@ -5,6 +5,15 @@
   margin-top: 10px;
 }
 
+.experience-summary-cards h2 {
+  margin-bottom: 0;
+}
+
+.experience-summary-cards-subtitle {
+  margin-top: -8px;
+  color: var(--color-secondary-near);
+}
+
 .experience-summary-cards-link {
   text-decoration: none;
   color: inherit;

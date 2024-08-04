@@ -20,4 +20,5 @@
   flex-direction: column;
   margin: auto 10px;
   gap: 5px;
+  max-width: 87px;
 }

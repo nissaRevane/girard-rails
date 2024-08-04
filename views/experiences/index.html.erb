@@ -1,19 +1,76 @@
 <main class='main-content-after-header'>
-  <h1 class='container'>Mes expériences de développeur Ruby on Rails</h1>
-  <div class='container experience-summary-cards'>
-    <% work_experiences.each do |work_experience| %>
-      <a
-        href='/experiences/<%=work_experience[:company_name]%>'
-        class='experience-summary-cards-link'
-      >
-        <%= render(
-          'experiences/_summary_card.html.erb',
-          company_name: work_experience[:company_name],
-          start_date: work_experience[:start_date],
-          end_date: work_experience[:end_date],
-          tags: work_experience[:tags]
-        ) %>
+  <h1 class='container'>De l'étudiant ingénieur à l'expert Ruby on Rails</h1>
+
+  <section class='container'>
+    <h2>Construire une expertse en 5 ans de CDI</h2>
+    <p class="experience-summary-cards-subtitle">
+      Aller plus loin dans les technologies que j'aime. Apprendre à exploiter leurs
+      plein potentiels pour créer des applications performantes et maintenables.
+    </p>
+    <div class='experience-summary-cards'>
+      <% work_experiences.each do |work_experience| %>
+        <a
+          href='/experiences/<%=work_experience[:company_name]%>'
+          class='experience-summary-cards-link'
+        >
+          <%= render(
+            'experiences/_summary_card.html.erb',
+            company_name: work_experience[:company_name],
+            start_date: work_experience[:start_date],
+            end_date: work_experience[:end_date],
+            tags: work_experience[:tags]
+          ) %>
+        </a>
       <% end %>
-    </a>
-  </div>
+    </div>
+  </section>
+
+  <section class='container'>
+    <h2>Trouver ma voie en 2 stages</h2>
+    <p class="experience-summary-cards-subtitle">
+      L'exploration des environnements, des technologies et des manière de travailler
+      pour trouver ce qui me correspond
+    </p>
+    <div class='experience-summary-cards'>
+      <% intern_experiences.each do |intern_experience| %>
+        <a
+          href='/experiences/<%=intern_experience[:company_name]%>'
+          class='experience-summary-cards-link'
+        >
+          <%= render(
+            'experiences/_summary_card.html.erb',
+            company_name: intern_experience[:company_name],
+            start_date: intern_experience[:start_date],
+            end_date: intern_experience[:end_date],
+            tags: intern_experience[:tags]
+          ) %>
+        </a>
+      <% end %>
+    </div>
+  </section>
+
+  <section class='container'>
+    <h2>Acquérir des bases solides grâce à 2 diplômes</h2>
+    <p class="experience-summary-cards-subtitle">
+      Un diplôme d'ingénieur en informatique pour avoir une culture technologique
+      de base et un début de pratique. Un master en management pour s'initier à la
+      gestion de projet et d'équipe.
+    </p>
+    <div class='experience-summary-cards'>
+      <% degree_experiences.each do |degree_experience| %>
+        <a
+          href='/experiences/<%=degree_experience[:company_name]%>'
+          class='experience-summary-cards-link'
+        >
+          <%= render(
+            'experiences/_summary_card.html.erb',
+            company_name: degree_experience[:company_name],
+            start_date: degree_experience[:start_date],
+            end_date: degree_experience[:end_date],
+            tags: degree_experience[:tags]
+          ) %>
+        </a>
+      <% end %>
+    </div>
+  </section>
 </main>
