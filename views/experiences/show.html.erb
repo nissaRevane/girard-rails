@@ -14,11 +14,11 @@
       </div>
     </div>
     <a href='/experiences' class='girard-button primary-near experiences-show-back-button'>
-      ⬅ Retour
+      ⬅ <span>Retour</span>
     </a>
   </div>
 
-  <div class='experience-tags container'>
+  <div class='experiences-show-tags container'>
     <% tags.each_with_index do |tag, index| %>
       <%= render(
         'shared/tag.erb',

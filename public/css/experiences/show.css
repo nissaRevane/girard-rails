@@ -3,6 +3,10 @@
   justify-content: space-between;
 }
 
+.experiences-show-header h1 {
+  overflow: ellipsis;
+}
+
 .experiences-show-header-details {
   display: flex;
   gap: 10px;
@@ -19,4 +23,15 @@
   margin: 0;
 }
 
+.experiences-show-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
 .experiences-show-square-logo { height: 57px; }
+
+@media (max-width: 425px) {
+  .experiences-show-back-button span { display: none; }
+}
