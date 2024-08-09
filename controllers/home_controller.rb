@@ -4,13 +4,15 @@ require_relative 'application_controller'
 
 class HomeController < ApplicationController
   SKILLS = {
-    rails: 'middle',
-    database: 'middle-left',
-    test: 'middle-right',
-    cloud: 'bottom',
+    monitoring: 'top-left',
     async: 'top',
     frontend: 'top-right',
-    monitoring: 'top-left'
+    database: 'middle-left',
+    rails: 'middle',
+    test: 'middle-right',
+    agile: 'bottom-left',
+    cloud: 'bottom',
+    architecture: 'bottom-right'
   }.freeze
 
   def self.index
