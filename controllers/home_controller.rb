@@ -3,14 +3,15 @@
 require_relative 'application_controller'
 
 class HomeController < ApplicationController
-  SKILLS = %w[
-    rails
-    database
-    test
-    cloud
-    async
-    frontend
-  ]
+  SKILLS = {
+    rails: 'middle',
+    database: 'middle-left',
+    test: 'middle-right',
+    cloud: 'bottom',
+    async: 'top',
+    frontend: 'top-right'
+  }.freeze
+
   def self.index
     [200, HTML_HEADER, [render_with_layout('home.html.erb', skills: SKILLS)]]
   end
