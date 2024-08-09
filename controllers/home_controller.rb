@@ -9,7 +9,8 @@ class HomeController < ApplicationController
     test: 'middle-right',
     cloud: 'bottom',
     async: 'top',
-    frontend: 'top-right'
+    frontend: 'top-right',
+    monitoring: 'top-left'
   }.freeze
 
   def self.index

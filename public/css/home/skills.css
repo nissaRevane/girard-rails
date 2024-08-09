@@ -5,7 +5,17 @@
   grid-auto-rows: repeat(3, 1fr);
 }
 
-.grid-top-right {
+.skill {
+  border-radius: 999px;
+  border: 5px solid var(--color-primary-near);
+  overflow: hidden;
+}
+
+.skill img {
+  width: 100%;
+}
+
+.grid-top-left {
   grid-area: 1 / 1 / 2 / 2;
 }
 
@@ -13,11 +23,11 @@
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.grid-top-left {
+.grid-top-right {
   grid-area: 1 / 3 / 2 / 4;
 }
 
-.grid-middle-right {
+.grid-middle-left{
   grid-area: 2 / 1 / 3 / 2;
 }
 
@@ -25,11 +35,11 @@
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.grid-middle-left {
+.grid-middle-right {
   grid-area: 2 / 3 / 3 / 4;
 }
 
-.grid-bottom-right {
+.grid-bottom-left {
   grid-area: 3 / 1 / 4 / 2;
 }
 
@@ -37,6 +47,6 @@
   grid-area: 3 / 2 / 4 / 3;
 }
 
-.grid-bottom-left {
+.grid-bottom-right {
   grid-area: 3 / 3 / 4 / 4;
 }
