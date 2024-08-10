@@ -1,0 +1,24 @@
+.home-skills {
+  margin-top: -40px;
+  padding-top: 60px;
+}
+
+.home-skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills {
+  flex: 2 1 300px;
+}
+
+.summary-skill {
+  flex: 1 1 300px;
+}
+
+@media (max-width: 700px) {
+  .summary-skill {
+    flex: 1 1 100%;
+  }
+}

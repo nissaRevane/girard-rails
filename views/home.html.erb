@@ -3,6 +3,9 @@
 
   <section id='skills' class='home-skills container'>
     <h2>Compétences</h2>
-    <%= render('home/skills.html.erb', skills:, selected_skill:) %>
+    <div class='home-skills-content'>
+      <%= render('home/skills.html.erb', skills:, selected_skill:) %>
+      <%= render "home/skill_summary/#{selected_skill}.html.erb" %>
+    </div>
   </section>
 </main>
