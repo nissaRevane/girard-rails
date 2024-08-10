@@ -1,6 +1,9 @@
 <div class="skills">
   <% skills.each do |skill, position| %>
-    <a class="skill grid-<%=position%>" href="#skills">
+    <a
+      class="skill grid-<%=position%> <%=skill==selected_skill ? 'selected' : ''%>"
+      href="/home/<%=skill%>#skills"
+    >
       <img src="/public/images/skills/skill_<%=skill%>.png" alt="<%=skill%>">
     </a>
   <% end %>

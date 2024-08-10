@@ -15,7 +15,11 @@ class HomeController < ApplicationController
     architecture: 'bottom-right'
   }.freeze
 
-  def self.index
-    [200, HTML_HEADER, [render_with_layout('home.html.erb', skills: SKILLS)]]
+  def self.index(selected_skill = :rails)
+    [
+      200,
+      HTML_HEADER,
+      [render_with_layout('home.html.erb', skills: SKILLS, selected_skill:)]
+    ]
   end
 end
