@@ -16,6 +16,8 @@ class HomeController < ApplicationController
   }.freeze
 
   def self.index(selected_skill = :rails)
+    return not_found unless SKILLS.key?(selected_skill)
+
     [
       200,
       HTML_HEADER,

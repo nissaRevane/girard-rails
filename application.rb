@@ -24,7 +24,7 @@ class Application
       company_name = match_data[1]
       ExperiencesController.show(company_name)
     else
-      ErrorsController.not_found
+      ApplicationController.not_found
     end
   end
 end
