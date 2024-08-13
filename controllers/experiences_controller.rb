@@ -6,16 +6,16 @@ require_relative 'application_controller'
 class ExperiencesController < ApplicationController
   WORK_EXPERIENCES = [
     { company_name: 'dickson',
-      start_date: DateTime.new(2024, 2, 16),
+      start_date: DateTime.new(2024, 3, 22),
       end_date: DateTime.now,
       tags: ['Ruby on rails', 'Elixir Phoenix', 'PostgreSQL', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Sidekiq', 'VueJs'] },
     { company_name: 'enerfip',
-      start_date: DateTime.new(2022, 4, 17),
-      end_date: DateTime.new(2024, 2, 15),
+      start_date: DateTime.new(2022, 6, 13),
+      end_date: DateTime.new(2024, 3, 21),
       tags: ['Ruby on rails', 'PostgreSQL', 'Heroku', 'RabbitMQ', 'VueJs'] },
     { company_name: 'shippingbo',
       start_date: DateTime.new(2019, 10, 1),
-      end_date: DateTime.new(2022, 4, 16),
+      end_date: DateTime.new(2022, 6, 10),
       tags: ['Ruby on rails', 'PostgreSQL', 'Heroku', 'Sidekiq', 'EmberJs'] },
   ].freeze
 
@@ -32,7 +32,7 @@ class ExperiencesController < ApplicationController
 
   DEGREE_EXPERIENCES = [
     { company_name: 'insa',
-      start_date: DateTime.new(2015, 9, 1),
+      start_date: DateTime.new(2016, 9, 1),
       end_date: DateTime.new(2019, 9, 17),
       tags: ['informatique', 'génie industriel'] },
     { company_name: 'master',
