@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'controllers/errors_controller'
+require_relative 'controllers/application_controller'
 require_relative 'controllers/experiences_controller'
 require_relative 'controllers/home_controller'
-require_relative 'controllers/errors_controller'
 
 class Application
   EXPERIENCED_COMPANY_REGEX = /^\/experiences\/(\w+)/
