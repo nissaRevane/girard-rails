@@ -8,11 +8,11 @@ class ExperiencesController < ApplicationController
     { company_name: 'dickson',
       start_date: DateTime.new(2024, 3, 22),
       end_date: DateTime.now,
-      tags: ['Ruby on rails', 'Elixir Phoenix', 'PostgreSQL', 'MySQL', 'AWS', 'Docker', 'Kubernetes', 'Sidekiq', 'VueJs'] },
+      tags: ['Ruby on rails', 'Elixir', 'MySQL', 'AWS', 'Kubernetes', 'Sidekiq', 'VueJS'] },
     { company_name: 'enerfip',
       start_date: DateTime.new(2022, 6, 13),
       end_date: DateTime.new(2024, 3, 21),
-      tags: ['Ruby on rails', 'PostgreSQL', 'Heroku', 'RabbitMQ', 'VueJs'] },
+      tags: ['Ruby on rails', 'PostgreSQL', 'AWS', 'RabbitMQ', 'VueJS'] },
     { company_name: 'shippingbo',
       start_date: DateTime.new(2019, 10, 1),
       end_date: DateTime.new(2022, 6, 10),
@@ -27,18 +27,18 @@ class ExperiencesController < ApplicationController
     { company_name: 'total',
       start_date: DateTime.new(2017, 8, 1),
       end_date: DateTime.new(2018, 2, 15),
-      tags: ['Python', 'Flask', 'SQLAlchemy'] },
+      tags: ['Python Flask', 'MySQL', 'OVH'] },
   ].freeze
 
   DEGREE_EXPERIENCES = [
     { company_name: 'insa',
       start_date: DateTime.new(2016, 9, 1),
       end_date: DateTime.new(2019, 9, 17),
-      tags: ['informatique', 'génie industriel'] },
+      tags: ['Logiciels', 'Automatisme', 'GPAO', 'Robotique'] },
     { company_name: 'master',
       start_date: DateTime.new(2018, 9, 1),
       end_date: DateTime.new(2019, 9, 17),
-      tags: ['management', 'gestion de projet', 'agilité', 'finance', 'marketing'] },
+      tags: ['Management', 'Gestion de projet', 'Agilité', 'Finance', 'Marketing'] },
   ].freeze
 
   EXPERIENCES = WORK_EXPERIENCES + INTERN_EXPERIENCES + DEGREE_EXPERIENCES

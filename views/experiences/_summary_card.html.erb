@@ -1,15 +1,17 @@
 <div class='summary-card'>
-  <img
-    class='summary-card-logo'
-    src=<%="'/public/images/logos/#{company_name}_company_square_logo.webp'"%>
-    alt=<%="'Logo de #{company_name}'"%>
-  >
+  <div class='summary-card-header'>
+    <img
+      class='summary-card-logo'
+      src=<%="'/public/images/logos/#{company_name}_company_square_logo.webp'"%>
+      alt=<%="'Logo de #{company_name}'"%>
+    >
 
-  <div class='summary-card-highlights'>
-    <h3><%= company_name.capitalize %></h3>
-    <p class='summary-card-duration'>
-      <%="#{start_date.strftime('%m/%Y')} - #{end_date.strftime('%m/%Y')}"%>
-    </p>
+    <div class='summary-card-highlights'>
+      <h3><%= company_name.capitalize %></h3>
+      <p class='summary-card-duration'>
+        <%="#{start_date.strftime('%m/%Y')} - #{end_date.strftime('%m/%Y')}"%>
+      </p>
+    </div>
   </div>
 
   <div class='summary-card-tags'>

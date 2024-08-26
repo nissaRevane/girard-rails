@@ -1,9 +1,13 @@
 .summary-card {
   border: 1px groove var(--color-secondary-near);
   border-radius: 12px;
-  display: flex;
   width: fit-content;
   padding: 10px;
+  max-width: 500px;
+}
+
+.summary-card-header {
+  display: flex;
 }
 
 .summary-card-logo {
@@ -17,7 +21,8 @@
 
 .summary-card-tags {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   margin: auto 10px;
   gap: 5px;
 }
