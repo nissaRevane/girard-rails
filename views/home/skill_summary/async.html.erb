@@ -1,6 +1,6 @@
 <div class="summary-skill skill-async">
   <h3>Asynchrone</h3>
   <p>
-    J'ai une bonne connaissance des problématiques liées à l'asynchrone. J'ai travaillé sur des projets qui nécessitaient de gérer des tâches de fond, des websockets, des queues de messages, des tâches planifiées, etc. J'ai utilisé des outils comme Sidekiq, ActiveJob, ActionCable, etc. pour répondre à ces besoins. J'ai également une bonne connaissance des problématiques liées à la concurrence et à la parallélisation.
+    Dans le système que l'on conçoit on n'a pas toujours besoin d'attendre que les tâches se terminent pour passer à la suite. Générer un PDF, envoyer un mail, appeler une API, toutes ces tâches peuvent être faites en parallèle pour gagner du temps. Il existe différents moyens de gérer l'asynchrone en Ruby on Rails, j'ai eu l'occasion de travailler avec Sidekiq et  la gem bunny pour RabbitMQ. L'outil ne fait pas tout, il est important de réfléchir à l'architecture de son application pour gérer l'asynchrone de manière efficace. Il faut notamment avoir en tête qu'exécuter une tâche en asynchrone c'est l'exécuter hors de son contexte d'origine et qu' aucun ordre n'est garanti. Il faut donc se poser les bonnes questions. Y a t-il une priorité parmi les tâches à exécuter ? Comment gérer un échec ? Comment gérer la concurrence ?
   </p>
 </div>
