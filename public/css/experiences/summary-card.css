@@ -6,6 +6,10 @@
   max-width: 500px;
 }
 
+.summary-card:hover {
+  border: 1px groove var(--color-secondary-far);
+}
+
 .summary-card-header {
   display: flex;
 }
