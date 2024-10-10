@@ -1,3 +1,15 @@
+.home-interview {
+  margin-top: 20px;
+  display: flex;
+  aspect-ratio: 16 / 9;
+}
+
+.home-interview iframe {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 .home-skills {
   margin-top: -40px;
   padding-top: 60px;

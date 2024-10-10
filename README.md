@@ -13,3 +13,7 @@ bundle install
 rackup
 
 http://localhost:9292
+
+## Deploy
+
+`fly deploy`
